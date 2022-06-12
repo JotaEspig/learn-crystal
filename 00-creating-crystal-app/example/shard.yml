@@ -1,0 +1,13 @@
+name: example
+version: 0.1.0
+
+authors:
+  - João Vitor Espig <jotinha1300@gmail.com>
+
+targets:
+  example:
+    main: src/example.cr
+
+crystal: 1.4.1
+
+license: MIT
