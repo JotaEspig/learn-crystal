@@ -6,4 +6,4 @@ end
 p! a
 
 # you can use as a suffix 
-puts "hello" unless a.nil?
+puts "a is not nil" unless a.nil?
