@@ -5,6 +5,15 @@ while x < 5
     x += 1
 end
 
+# You can use 'break' to stop a loop
+x = 0
+y = while (x += 1) < 5
+    # using x += 1, 
+    # it'll make the loop start with x being 1
+    break x if x = 3
+end
+p! y
+
 # using while true
 x = 0
 while true
@@ -29,3 +38,10 @@ x = while y < 5
     y += 1
 end
 p! x # x # => 3
+
+# using 'next' keyword
+x = 0
+while (x += 1) <= 10
+    next if x == 7
+    puts x
+end
