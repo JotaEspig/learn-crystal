@@ -44,3 +44,18 @@ end
 x = Kid.new
 x.name = "john"
 puts x.name
+
+# Using operators
+class MyNumber
+    property num
+    def initialize
+        @num = 10
+    end
+
+    def +(other : self)
+        @num + other.num
+    end
+end
+
+x = MyNumber.new
+p! x + MyNumber.new
