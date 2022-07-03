@@ -19,3 +19,19 @@ end
 
 hello
 hello target: "mom"
+
+
+def hello_all(*targets : String)
+    targets.each do |elem|
+        puts elem
+    end
+end
+
+hello_all("cavalo", "juan", "whoops") # UNLIMITED ARGUMENTS!!!!!!!! POWER
+
+def print_hash(nome, age)
+    puts nome, age
+end
+
+named_tuple = {name: "João", age: 10_u32}
+print_hash(**named_tuple) # pass arguments for each key
